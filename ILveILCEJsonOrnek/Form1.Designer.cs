@@ -31,8 +31,8 @@ namespace ILveILCEJsonOrnek
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.ILToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ILCEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ILSorgulamaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ILCEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ILCESorgulamaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -58,6 +58,13 @@ namespace ILveILCEJsonOrnek
             this.ILToolStripMenuItem.Size = new System.Drawing.Size(34, 24);
             this.ILToolStripMenuItem.Text = "İL";
             // 
+            // ILSorgulamaToolStripMenuItem
+            // 
+            this.ILSorgulamaToolStripMenuItem.Name = "ILSorgulamaToolStripMenuItem";
+            this.ILSorgulamaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.ILSorgulamaToolStripMenuItem.Text = "İL Sorgulama";
+            this.ILSorgulamaToolStripMenuItem.Click += new System.EventHandler(this.ILSorgulamaToolStripMenuItem_Click);
+            // 
             // ILCEToolStripMenuItem
             // 
             this.ILCEToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -66,16 +73,10 @@ namespace ILveILCEJsonOrnek
             this.ILCEToolStripMenuItem.Size = new System.Drawing.Size(50, 24);
             this.ILCEToolStripMenuItem.Text = "İLÇE";
             // 
-            // ILSorgulamaToolStripMenuItem
-            // 
-            this.ILSorgulamaToolStripMenuItem.Name = "ILSorgulamaToolStripMenuItem";
-            this.ILSorgulamaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.ILSorgulamaToolStripMenuItem.Text = "İL Sorgulama";
-            // 
             // ILCESorgulamaToolStripMenuItem
             // 
             this.ILCESorgulamaToolStripMenuItem.Name = "ILCESorgulamaToolStripMenuItem";
-            this.ILCESorgulamaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.ILCESorgulamaToolStripMenuItem.Size = new System.Drawing.Size(195, 26);
             this.ILCESorgulamaToolStripMenuItem.Text = "İLÇE Sorgulama";
             this.ILCESorgulamaToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.ILCESorgulamaToolStripMenuItem.Click += new System.EventHandler(this.ILCESorgulamaToolStripMenuItem_Click);

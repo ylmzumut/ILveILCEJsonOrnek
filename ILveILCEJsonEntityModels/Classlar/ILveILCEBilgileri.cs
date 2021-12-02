@@ -19,5 +19,5 @@ namespace ILveILCEJsonEntityModels.Classlar
         public string Bolge { get; set; }
         public string Bilgi { get; set; }
     }
-    }
+    
 }

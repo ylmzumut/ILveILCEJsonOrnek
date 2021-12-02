@@ -21,5 +21,18 @@ namespace ILveILCEJsonOrnek
         {
 
         }
+
+        private void ILSorgulamaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (this.ActiveMdiChild != null)
+            {
+                this.ActiveMdiChild.Hide();
+            }
+
+            FormIL fromILSorgulama = new FormIL();
+            fromILSorgulama.MdiParent = this;
+            fromILSorgulama.Show();
+            this.LayoutMdi(MdiLayout.TileVertical);
+        }
     }
 }
