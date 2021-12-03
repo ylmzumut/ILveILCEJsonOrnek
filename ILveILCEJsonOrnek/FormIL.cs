@@ -49,6 +49,13 @@ namespace ILveILCEJsonOrnek
                 //listView'e ekleme yapılacak.
                 listView1.Items.Add(deger);
             }
+
+            //groupbox başlangıçta gizli olmalıdır.
+            groupBoxIL.Enabled = false;
+            groupBoxIL.Visible = false;
+            //detay göster şeklinde sağ tık menüsü gerekiyor.
+            // bu kontrol toolbox'ta var istersek designer ekranında toolbox'tan çekip form üzerine yerleştirebiliriz.
+            // ama biz bunu designerdan yapmaıp code ekrann
         }
 
         private void btnSec_Click(object sender, EventArgs e)
@@ -75,6 +82,16 @@ namespace ILveILCEJsonOrnek
             deger.SubItems.Add(secilenILBilgisi.Web);
             listView1.Items.Add(deger);
 
+        }
+
+
+        private void detayGosterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            groupBoxIL.Visible = true;
+            groupBoxIL.Enabled = true;
+
+            ILveILCEBilgileri secilenIL = (ILveILCEBilgileri)listView1.FocusedItem.Tag;
+            richTextBoxIL.Text = secilenIL.Bilgi;
         }
     }
 }

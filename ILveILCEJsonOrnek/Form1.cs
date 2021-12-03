@@ -19,7 +19,15 @@ namespace ILveILCEJsonOrnek
 
         private void ILCESorgulamaToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (this.ActiveMdiChild != null)
+            {
+                this.ActiveMdiChild.Hide();
+            }
+            FormILveILCE formIlce = new FormILveILCE();
+            formIlce.MdiParent = this;
+            formIlce.Show();
 
+            this.LayoutMdi(MdiLayout.TileVertical);
         }
 
         private void ILSorgulamaToolStripMenuItem_Click(object sender, EventArgs e)

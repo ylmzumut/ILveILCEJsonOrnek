@@ -46,7 +46,7 @@ namespace ILveILCEJsonOrnek
             this.ILCEToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1090, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -61,7 +61,7 @@ namespace ILveILCEJsonOrnek
             // ILSorgulamaToolStripMenuItem
             // 
             this.ILSorgulamaToolStripMenuItem.Name = "ILSorgulamaToolStripMenuItem";
-            this.ILSorgulamaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.ILSorgulamaToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
             this.ILSorgulamaToolStripMenuItem.Text = "İL Sorgulama";
             this.ILSorgulamaToolStripMenuItem.Click += new System.EventHandler(this.ILSorgulamaToolStripMenuItem_Click);
             // 
@@ -85,7 +85,7 @@ namespace ILveILCEJsonOrnek
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1090, 542);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
