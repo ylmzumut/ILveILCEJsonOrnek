@@ -26,7 +26,23 @@ namespace ILveILCEJsonBLL
         }
         public List<IL> IlleriGetir()
         {
-            return JsonConvert.DeserializeObject<List<IL>>(JSonString);
+            List<IL> ILListesi = new List<IL>();
+            var jsonData = JsonConvert.DeserializeObject<List<ILJson>>(JSonString);
+
+            foreach (var item in jsonData)
+            {
+                ILListesi.Add(
+                    new IL()
+                    {
+                        ILAdi=item.il,
+                        PlakaKodu=Convert.ToByte(item.plaka),
+                        ILceleri=item.ilceleri
+                    }
+
+                    );
+            }
+
+            return ILListesi;
         }
     }
 }

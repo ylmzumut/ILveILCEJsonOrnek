@@ -33,6 +33,11 @@ namespace ILveILCEJsonOrnek
             this.listView1 = new System.Windows.Forms.ListView();
             this.btnSec = new System.Windows.Forms.Button();
             this.comboBoxILSecimi = new System.Windows.Forms.ComboBox();
+            this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader2 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader3 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader4 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader5 = new System.Windows.Forms.ColumnHeader();
             this.SuspendLayout();
             // 
             // lblILAdi
@@ -46,12 +51,20 @@ namespace ILveILCEJsonOrnek
             // 
             // listView1
             // 
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4,
+            this.columnHeader5});
+            this.listView1.GridLines = true;
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(29, 79);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(591, 359);
             this.listView1.TabIndex = 2;
             this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
             // 
             // btnSec
             // 
@@ -61,6 +74,7 @@ namespace ILveILCEJsonOrnek
             this.btnSec.TabIndex = 3;
             this.btnSec.Text = "SEÇ";
             this.btnSec.UseVisualStyleBackColor = true;
+            this.btnSec.Click += new System.EventHandler(this.btnSec_Click);
             // 
             // comboBoxILSecimi
             // 
@@ -69,6 +83,31 @@ namespace ILveILCEJsonOrnek
             this.comboBoxILSecimi.Name = "comboBoxILSecimi";
             this.comboBoxILSecimi.Size = new System.Drawing.Size(433, 28);
             this.comboBoxILSecimi.TabIndex = 4;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "İsim";
+            this.columnHeader1.Width = 100;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Telefon";
+            this.columnHeader2.Width = 100;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Fax";
+            this.columnHeader3.Width = 100;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "E-posta";
+            this.columnHeader4.Width = 100;
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "Web Sitesi";
+            this.columnHeader5.Width = 120;
             // 
             // FormIL
             // 
@@ -93,5 +132,10 @@ namespace ILveILCEJsonOrnek
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.Button btnSec;
         private System.Windows.Forms.ComboBox comboBoxILSecimi;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.ColumnHeader columnHeader5;
     }
 }

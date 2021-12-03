@@ -9,7 +9,7 @@ namespace ILveILCEJsonEntityModels.Classlar
     public class IL
     {
         public string ILAdi { get; set; }
-        public string PlakaKodu { get; set; }
+        public byte PlakaKodu { get; set; }
         public List<String> ILceleri { get; set; }
     }
 
